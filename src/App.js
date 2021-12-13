@@ -20,6 +20,10 @@ function App() {
     }
   };
 
+  const clearField = () => {
+    setValue("");
+  };
+
   return (
     <div className="container">
       <div className="heading">CALCULATOR</div>
@@ -157,11 +161,11 @@ function App() {
         </div>
         <div className="row1 ">
           <button
-            onClick={() => calculateValue()}
-            value="="
+            onClick={(e) => setValue(value + e.target.value)}
+            value="-"
             className="btn-field  last-row"
           >
-            =
+            -
           </button>
         </div>
         <div className="row1     ">
@@ -173,6 +177,13 @@ function App() {
             /
           </button>
         </div>
+
+        <button className="action-btn" onClick={clearField}>
+          Clear
+        </button>
+        <button className="action-btn" onClick={calculateValue}>
+          =
+        </button>
       </div>
     </div>
   );
