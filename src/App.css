@@ -11,7 +11,7 @@ body {
   background: black;
   border-radius: 10px;
 
-  box-shadow: 0 0 13px ghostwhite, 0 0 5px ghostwhite;
+  box-shadow: 0 0 5px ghostwhite, 0 0 5px #a1a1aa;
 }
 .heading {
   font-size: 200%;
@@ -63,8 +63,15 @@ body {
   background-color: #404040;
   color: white;
   border-radius: 100%;
-  border-color: transparent;
+  /* border-color: transparent; */
 }
+.btn-field:hover {
+  /* border: thistle; */
+  /* border-color: white; */
+  /* border: 3px solid #71717a; */
+  border: thick;
+}
+
 .last-row {
   font-size: larger;
   padding: 18.8px;
@@ -79,5 +86,10 @@ body {
   font-size: larger;
   border-radius: 10%;
   cursor: grab;
-  border: transparent;
+  /* border: transparent; */
+}
+.action-btn:hover {
+  /* border-color: white; */
+  /* border: 3px solid white; */
+  border: thick;
 }
