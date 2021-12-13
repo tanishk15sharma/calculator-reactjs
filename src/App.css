@@ -1,9 +1,10 @@
 .container {
   text-align: center;
   border: 2px solid;
-  max-width: 550px;
+  max-width: 250px;
   margin: 50px auto;
   padding: 0.5rem;
+  background: lightskyblue;
 }
 .heading {
   font-size: 200%;
@@ -15,13 +16,38 @@
 /* .inputcontainer { */
 /* } */
 
-.row1 {
-  padding: 1rem;
-}
-
 .inputfield {
+  text-align: right;
+  margin: 0 auto;
+  display: block;
   border: transparent;
   background-color: thistle;
   /* border: 3px solid blue; */
   padding: 1rem;
+  max-width: 70%;
+  font-size: larger;
+}
+
+.rowcontainer {
+  display: inline;
+  /* max-width: 30px; */
+  /* width: 40%; */
+
+  /* border: 2px solid tomato; */
+}
+.row1 {
+  display: inline-block;
+  /* padding: 1rem; */
+  /* border: 1px solid gold; */
+}
+
+.btn-field {
+  display: block;
+  padding: 1.1rem;
+  margin: 0.2rem;
+  font-size: large;
+}
+.last-row {
+  font-size: larger;
+  padding: 18.8px;
 }

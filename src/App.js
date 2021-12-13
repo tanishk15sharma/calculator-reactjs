@@ -11,24 +11,147 @@ function App() {
 
       <div className="rowcontainer">
         <div className="row1">
-          <button onClick={(e) => setValue(value + e.target.value)} value="1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
             1
           </button>
         </div>
-
         <div className="row1">
-          <button onClick={(e) => setValue(value + e.target.value)} value="1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
             2
           </button>
         </div>
         <div className="row1">
-          <button onClick={(e) => setValue(value + e.target.value)} value="1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
             3
           </button>
         </div>
         <div className="row1">
-          <button onClick={(e) => setValue(value + e.target.value)} value="1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
+            C
+          </button>
+        </div>
+        <div className="row1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
             4
+          </button>
+        </div>
+        <div className="row1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
+            5
+          </button>
+        </div>
+        <div className="row1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
+            6
+          </button>
+        </div>
+        <div className="row1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
+            +
+          </button>
+        </div>
+        <div className="row1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
+            7
+          </button>
+        </div>
+        <div className="row1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
+            8
+          </button>
+        </div>
+        <div className="row1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
+            9
+          </button>
+        </div>
+        <div className="row1">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field"
+          >
+            X
+          </button>
+        </div>
+        <div className="row1 ">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field  last-row"
+          >
+            .
+          </button>
+        </div>
+        <div className="row1   ">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field  last-row"
+          >
+            0
+          </button>
+        </div>
+        <div className="row1 ">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field  last-row"
+          >
+            =
+          </button>
+        </div>
+        <div className="row1     ">
+          <button
+            onClick={(e) => setValue(value + e.target.value)}
+            value="1"
+            className="btn-field    last-row"
+          >
+            /
           </button>
         </div>
       </div>
