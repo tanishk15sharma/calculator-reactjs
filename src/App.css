@@ -26,6 +26,7 @@
   padding: 1rem;
   max-width: 70%;
   font-size: larger;
+  cursor: pointer;
 }
 
 .rowcontainer {
@@ -46,6 +47,7 @@
   padding: 1.1rem;
   margin: 0.2rem;
   font-size: large;
+  cursor: pointer;
 }
 .last-row {
   font-size: larger;

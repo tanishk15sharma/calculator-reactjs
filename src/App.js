@@ -4,10 +4,33 @@ import React, { useState } from "react";
 function App() {
   const [value, setValue] = useState("");
 
+  const backspace = () => {
+    try {
+      setValue(value.slice(0, -1));
+    } catch (error) {
+      setValue("");
+    }
+  };
+
+  const calculateValue = () => {
+    try {
+      setValue(eval(value));
+    } catch (error) {
+      setValue("Error");
+    }
+  };
+
   return (
     <div className="container">
       <div className="heading">CALCULATOR</div>
-      <input value={value} type="text" className="inputfield" />
+      <input
+        value={value}
+        type="text"
+        className="inputfield"
+        onChange={(e) => {
+          setValue(e.target.value);
+        }}
+      />
 
       <div className="rowcontainer">
         <div className="row1">
@@ -22,7 +45,7 @@ function App() {
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="2"
             className="btn-field"
           >
             2
@@ -31,25 +54,21 @@ function App() {
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="3"
             className="btn-field"
           >
             3
           </button>
         </div>
         <div className="row1">
-          <button
-            onClick={(e) => setValue(value + e.target.value)}
-            value="1"
-            className="btn-field"
-          >
+          <button onClick={() => backspace()} value="c" className="btn-field">
             C
           </button>
         </div>
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="4"
             className="btn-field"
           >
             4
@@ -58,7 +77,7 @@ function App() {
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="5"
             className="btn-field"
           >
             5
@@ -67,7 +86,7 @@ function App() {
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="6"
             className="btn-field"
           >
             6
@@ -76,7 +95,7 @@ function App() {
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="+"
             className="btn-field"
           >
             +
@@ -85,7 +104,7 @@ function App() {
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="7"
             className="btn-field"
           >
             7
@@ -94,7 +113,7 @@ function App() {
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="8"
             className="btn-field"
           >
             8
@@ -103,7 +122,7 @@ function App() {
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="9"
             className="btn-field"
           >
             9
@@ -112,7 +131,7 @@ function App() {
         <div className="row1">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="*"
             className="btn-field"
           >
             X
@@ -121,7 +140,7 @@ function App() {
         <div className="row1 ">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="."
             className="btn-field  last-row"
           >
             .
@@ -130,7 +149,7 @@ function App() {
         <div className="row1   ">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="0"
             className="btn-field  last-row"
           >
             0
@@ -138,8 +157,8 @@ function App() {
         </div>
         <div className="row1 ">
           <button
-            onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            onClick={() => calculateValue()}
+            value="="
             className="btn-field  last-row"
           >
             =
@@ -148,7 +167,7 @@ function App() {
         <div className="row1     ">
           <button
             onClick={(e) => setValue(value + e.target.value)}
-            value="1"
+            value="/"
             className="btn-field    last-row"
           >
             /
